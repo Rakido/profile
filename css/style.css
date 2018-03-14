@@ -1,0 +1,132 @@
+@import url(card.css);
+
+
+
+* {
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	font-size: 10px;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	cursor: url('http://www.georgeandjonathan.com/images/cursor.png'), help;
+}
+
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-center {
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-end {
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#main_container {
+	flex:0.9;
+}
+
+#main_footer {
+	flex:0.1;
+}
+
+#container {
+	flex: 1;
+	height: 100vh;
+  background-image: linear-gradient(-217deg, #D63249 0%, #FC8462 100%);
+  z-index: 2;
+}
+
+@font-face {
+    font-family: 'Lyon';
+    src: url('fonts/LyonJean.woff2') format('woff2'),
+        url('fonts/LyonJean.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+h1 {
+	
+	text-align: center;
+	color:white;
+  color: transparent;
+   -webkit-text-stroke-color: #FFF;
+   -webkit-text-stroke-width: 1px;
+	letter-spacing: 2px;
+	font-family: 'Lyon';
+	font-size: 10rem;
+
+}
+
+h3 {
+	color: #2B2B2B;
+	font-size: 18px;
+}
+
+h4 {
+	color: rgba(0,0,0,0.67);
+	font-size: 15px;
+}
+
+.signature {
+	color: #AF1BC4;
+	font-size: 0.8rem;
+
+	margin-top: 50px;
+}
+
+.main_text {
+	margin-top: -10px;
+font-family: 'Roboto', sans-serif;
+font-size: 15px;
+line-height: 24Px;
+color: rgba(0,0,0,0.67)
+}
+
+.list {
+	opacity: .7;
+}
+
+.list_text {
+	margin-top: -10px;
+		margin-bottom: -10px;
+font-family: 'Roboto', sans-serif;
+font-size: 15px;
+line-height: 22Px;
+color: rgba(0,0,0,0.37)
+}
+
+
+
+#main_footer ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#main_footer ul li {
+	font-size: 30px;
+		display: inline;
+		padding: 1rem;
+		color: rgba(255,255,255,0.3);
+}
+
+#main_footer ul li:hover {
+		display: inline;
+		padding: 1rem;
+		color: rgba(255,255,255,0.8);
+}

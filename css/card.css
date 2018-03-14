@@ -1,0 +1,131 @@
+@keyframes SlideDown {
+	0% {
+	 width: 0vw;
+	}
+
+100% {
+	 width: 30vw;
+	}
+}
+
+@keyframes Opacity  {
+	0% {
+	 opacity: 0;
+	}
+
+100% {
+	 opacity: 1;
+	}
+}
+
+@keyframes Scale  {
+	0% {
+		opacity: 0;
+	 transform: scale(0);
+	}
+
+100% {
+	opacity: 1;
+	 transform: scale(1);
+	}
+}
+
+
+
+.card {
+	animation : SlideDown cubic-bezier(0.4, 0.0, 0.2, 1); 1;
+	animation-duration: 1s;
+	height: 60vh;
+	width:30vw;
+	background: #FFFFFF;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20);
+	border-radius: 8px;
+}
+
+
+.img-profile {
+	position: relative;
+	top: -3rem;
+	left: 2rem;
+	border-radius: 50%;
+	border: 1px solid #979797;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+	opacity: 0;
+		animation: Scale cubic-bezier(0.4, 0.0, 0.2, 1); 1;
+	animation-duration: 0.375s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+
+}
+
+.btn-primary{
+	margin-left: 10vw;
+	height: 50px;
+
+  background-image: linear-gradient(-133deg, #42E497 0%, #3BB7B4 100%);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+  border-radius: 4px;
+	font-family: Roboto-Bold;
+	font-size: 18px;
+	color: #FFFFFF;
+	letter-spacing: 2px;
+	line-height: 22px;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.20);
+	text-transform: uppercase;
+-webkit-transition:  box-shadow 1s;
+
+    position: relative;
+    left: 45px;
+    top: -30px;
+		
+		opacity: 0;
+    animation: Scale cubic-bezier(0.4, 0.0, 0.2, 1); 1; 
+    animation-duration:0.375s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+
+}
+
+.btn-primary:hover {
+
+background-image: linear-gradient(-133deg, #42E497 0%, #3BB7B4 100%);
+box-shadow: 0 15px 24px 0 rgba(66,1,1,0.47);
+border-radius: 4px;
+ transition-duration: 0.5s;
+}
+
+#left_menu {
+	flex:0.3;
+	padding-left: 20px;
+}
+
+#right_menu {
+	flex:0.7;
+		padding-right: 10px;
+}
+
+#header_card {
+
+	display: flex;
+	flex:0.1;
+
+}
+
+#main_card {
+	opacity: 0;
+	flex:0.9;
+	animation: Opacity 1s;
+	animation-delay: 1.5s;
+	animation-fill-mode: forwards;
+
+}
+
+#footer_card {
+	opacity: 0;
+	display: flex;
+	flex:0.1;
+	animation: Opacity 1s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+
+}
